@@ -8,7 +8,6 @@ RUN apt-get -qy update && apt-get -qy install openssl
 
 RUN npm ci && npm run build
 
-RUN npx prisma migrate dev && npx prisma generate
 
 ARG PORT
 ARG DATABASE_URL
@@ -32,5 +31,6 @@ EXPOSE $SMTP_PORT
 EXPOSE $SMTP_USER
 EXPOSE $SMTP_PASSWORD
 
+RUN npx prisma migrate dev && npx prisma generate
 
 CMD [ "npm", "start" ]
