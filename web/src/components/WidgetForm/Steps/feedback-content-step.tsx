@@ -38,12 +38,16 @@ export function FeedbackContentStep({
   const handleSubmitFeedback = async () => {
     if (isSubmittingFeedback) return;
     setIsSubmittingFeedback(true);
-
-    await api.post("/feedback", {
-      type: feedbackType,
-      comment: feedbackDescription,
-      screenshot,
-    });
+    try {
+      await api.post("/feedback", {
+        type: feedbackType,
+        comment: feedbackDescription,
+        screenshot,
+      });
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong. Please try again later.");
+    }
 
     setIsSubmittingFeedback(false);
 
