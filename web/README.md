@@ -52,7 +52,7 @@ npm preview
 ```
 
 This project is integrated with backend built in NodeJS.
-That you can access by click [here](https://github.com/).
+That you can access by click [here](https://github.com/NitoBa/nlw-return-impulse/tree/main/server).
 
 Create the .env.local in your project and replace the environment variable with your own
 You can view the example in .env.example file on root of the project
@@ -66,7 +66,7 @@ VITE_API_URL = "http://localhost:3333/"
 
 You can view the project through the links below:
 
-- [Live Preview](https://profile-website-murex.vercel.app/)
+- [Live Preview](https://nlw-return-impulse-omega.vercel.app/)
 
 ## 📝 License
 
