@@ -1,6 +1,6 @@
 <p align="center">
-  <img alt="preview image" src=".github/preview1.jpg">
-  <img alt="preview image" src=".github/preview2.jpg">
+  <!-- <img alt="preview image" src=".github/preview1.jpg">
+  <img alt="preview image" src=".github/preview2.jpg"> -->
 </p>
 
 <p align="center">
@@ -20,10 +20,13 @@
 
 This project was developed using the following technologies:
 
-- [ReactJS](https://reactjs.org/)
-- [Tailwind Css](https://tailwindcss.com/)
-- [Vite](https://vitejs.dev/)
-- [PhosphorIcons](https://phosphoricons.com/)
+- [NodeJS](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [Prisma](https://prisma.io/)
+- [Nodemailer](https://nodemailer.com/about/)
+- [MailTrap](https://mailtrap.io/)
+- [Docker](https://docker.com/)
+- [Jest](https://jestjs.io/pt-BR/)
 
 ## 🚀 Getting started
 
@@ -32,30 +35,35 @@ Clone the project and access the folder.
 ```bash
 git clone https://github.com/NitoBa/nlw-return-impulse.git
 
-cd nlw-return-impulse
+cd nlw-return-impulse/server
 ```
 
 Run this command to install the dependencies.
 
 ```bash
 npm install
+```
 
+Run migrations on database and generate types of prisma
+
+```bash
+npx prisma migrate dev
+npx prisma generate
+```
+
+Run project in development environment.
+
+```bash
 npm run dev
 ```
 
-Run this command to build to production
+## 🐳 Build and run project using Docker
+
 ```bash
-npm run build
+docker build -t feedwidget-server .
 
-npm start
+docker run -p 3333:3333 --name feedwidget-server-app feedwidget-server  
 ```
-
-
-## 🔖 Layout
-
-You can view the project through the links below:
-
-- [Live Preview](https://profile-website-murex.vercel.app/)
 
 ## 📝 License
 

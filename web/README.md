@@ -32,7 +32,7 @@ Clone the project and access the folder.
 ```bash
 git clone https://github.com/NitoBa/nlw-return-impulse.git
 
-cd nlw-return-impulse
+cd nlw-return-impulse/web
 ```
 
 Run this command to install the dependencies.
