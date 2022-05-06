@@ -9,7 +9,8 @@
     "test:integration": "dotenv -e .env.test jest --detectOpenHandles",
     "test:integration:watch": "dotenv -e .env.test jest --watch",
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules/ --respawn src/server.ts",
-    "build": "tsc",
+    "build": "npm run prisma:config && tsc",
+    "prisma:config": "npx prisma migrate deploy && npx prisma generate",
     "start": "node dist/server.js"
   },
   "keywords": [],
