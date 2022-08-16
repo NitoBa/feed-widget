@@ -16,6 +16,8 @@
 
 <br>
 
+# FRONTEND
+
 ## 🧪 Technologies
 
 This project was developed using the following technologies:
@@ -67,6 +69,59 @@ VITE_API_URL = "http://localhost:3333/"
 You can view the project through the links below:
 
 - [Live Preview](https://nlw-return-impulse-omega.vercel.app/)
+
+
+# BACKEND
+
+## 🧪 Technologies
+
+This project was developed using the following technologies:
+
+- [NodeJS](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [Prisma](https://prisma.io/)
+- [Nodemailer](https://nodemailer.com/about/)
+- [MailTrap](https://mailtrap.io/)
+- [Docker](https://docker.com/)
+- [Jest](https://jestjs.io/pt-BR/)
+
+## 🚀 Getting started
+
+Clone the project and access the folder.
+
+```bash
+git clone https://github.com/NitoBa/nlw-return-impulse.git
+
+cd nlw-return-impulse/server
+```
+
+Run this command to install the dependencies.
+
+```bash
+npm install
+```
+
+Run migrations on database and generate types of prisma
+
+```bash
+npx prisma migrate dev
+npx prisma generate
+```
+
+Run project in development environment.
+
+```bash
+npm run dev
+```
+
+## 🐳 Build and run project using Docker
+
+```bash
+docker build -t feedwidget-server .
+
+docker run -p 3333:3333 --name feedwidget-server-app feedwidget-server  
+```
+
 
 ## 📝 License
 
