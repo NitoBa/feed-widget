@@ -12,11 +12,10 @@
 </p>
 
 <h1 align="center">
+  Feed Widget
 </h1>
 
 <br>
-
-# FRONTEND
 
 ## 🧪 Technologies
 
